@@ -1,0 +1,7 @@
+build/
+docs/
+.babelrc
+.eslintrc
+.eslintignore
+package-lock.json
+README.md
