@@ -1,3 +1,4 @@
+/* stylelint-disable import-notation */
 /* Base */
 @import "./base/reset";
 @import "./base/vars";
@@ -7,4 +8,5 @@
 @import "./base/sticky-footer";
 
 /* Blocks */
-@import "./blocks/*.scss";
+@import "./blocks/*";
+@import "./modules/*";

@@ -1,14 +1,12 @@
-html, body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .footer {
-    margin-top: auto;
-}
-
-.footer {
-	padding: 60px 0;
-	background-color: #e3e3e3;
+  margin-top: auto;
+  padding: 60px 0;
+  background-color: #e3e3e3;
 }
