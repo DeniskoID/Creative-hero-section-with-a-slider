@@ -1,15 +1,24 @@
 :root {
-  --container-width: 1200px;
+  --container-width: 1780px;
   --container-padding: 15px;
 
   // Fonts
-  --font-main: "Poppins", sans-serif;
+  --font-main: "Montserrat", sans-serif;
   --font-accent: "Playfair Display", serif;
 
   // Colors
   --page-bg: #fff;
   --text-color: #000;
   --accent: #ac182c;
+
+  // Gradients for slider
+  --radial-slide-bg: radial-gradient(50% 50% at 50% 50%, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 20%) 100%);
+  --linear-slide-bg: linear-gradient(
+    180deg,
+    rgb(0 0 0 / 20%) 0%,
+    rgb(255 255 255 / 0%) 99.99%,
+    rgb(255 255 255 / 0%) 100%
+  );
 
   // Breakpoints
   --laptop-size: 1199px;

@@ -1,10 +1,37 @@
 .header {
-  padding: 50px 0;
-  background-color: rgb(195 220 231);
+  position: fixed;
+  left: 70px;
+  right: 70px;
+  top: 0;
+  z-index: 100;
+  padding-top: 49px;
+  padding-bottom: 50px;
 
   &__row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  &__nav {
+    @media (width <= 1200px) {
+      display: none;
+    }
+  }
+
+  @media (width <= 1200px) {
+    left: 40px;
+    right: 40px;
+    top: 0;
+    padding-top: 39px;
+    padding-bottom: 40px;
+  }
+
+  @media (width <= 767px) {
+    left: 5%;
+    right: 5%;
+    top: 0;
+    padding-top: 29px;
+    padding-bottom: 30px;
   }
 }

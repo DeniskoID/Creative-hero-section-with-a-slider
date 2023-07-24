@@ -2,6 +2,8 @@
 /* Base */
 @import "./base/reset";
 @import "./base/vars";
+@import "./mixins/*";
+@import "./base/fonts";
 @import "./base/base";
 @import "./base/utils";
 @import "./base/containers";

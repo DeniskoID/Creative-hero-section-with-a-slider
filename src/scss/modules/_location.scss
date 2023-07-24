@@ -1,0 +1,48 @@
+.location {
+  position: relative;
+  display: block;
+  flex-grow: 1;
+  padding: 34px 20px 26px 95px;
+  background-image: url("../img/icons/map-marker-line.svg");
+  background-position: 35px 40px;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    background-color: rgb(255 255 255 / 10%);
+    filter: blur(3px);
+    transition: all 0.3s ease-in;
+    inset: 0;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+
+    @media (width <= 1400px) {
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(255 255 255 / 40%);
+  }
+
+  @media (any-hover: hover) {
+    &:hover::before {
+      filter: blur(10px);
+    }
+  }
+
+  @media (width <= 1400px) {
+    padding: 20px 20px 18px 55px;
+    background-position: 15px 26px;
+  }
+}

@@ -1,7 +1,9 @@
 <header class="header">
-    <div class="container">
+    <div class="header__content">
         <div class="header__row">
-            <div class="logo">Logo</div>
+            <div class="heder__logo">
+                @@include('./../modules/logo.html')
+            </div>
             <div class="header__nav">
                 @@include('./../modules/nav.html')
             </div>
@@ -10,5 +12,5 @@
             </button>
         </div>
     </div>
+    @@include('./../modules/mobile-nav.html')
 </header>
-@@include('./../modules/mobile-nav.html')
