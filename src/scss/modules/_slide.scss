@@ -6,7 +6,6 @@
   overflow: hidden;
   padding-bottom: 80px;
   height: 100vh;
-  background: var(--radial-slide-bg), var(--linear-slide-bg), url("../img/slider-bg/01.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,12 +38,32 @@
   }
 
   &__title {
+    display: block;
     font-weight: 700;
     font-size: 13.35vw;
     line-height: 1.22;
-    -webkit-text-fill-color: transparent;
-    background: linear-gradient(47.06deg, #000 -3.87%, rgb(255 255 255 / 0%) 20.89%), #fff;
-    -webkit-background-clip: text;
+
+    &--norway {
+      @include text-gradient((linear-gradient(47.06deg, #051d27 -3.87%, rgb(255 255 255 / 0%) 20.89%), #fff));
+    }
+
+    &--austria {
+      @include text-gradient((linear-gradient(47.06deg, #122127 -3.87%, rgb(255 255 255 / 0%) 20.89%), #fff));
+    }
+
+    &--uae {
+      @include text-gradient((linear-gradient(47.06deg, #aa6621 -3.87%, rgb(255 255 255 / 0%) 20.89%), #fff));
+
+      text-transform: uppercase;
+    }
+
+    &--thailand {
+      @include text-gradient((linear-gradient(47.06deg, #2e7c88 -3.87%, rgb(255 255 255 / 0%) 20.89%), #fff));
+    }
+
+    &--morocco {
+      @include text-gradient((linear-gradient(47.06deg, #757575 -3.87%, rgb(255 255 255 / 0%) 20.89%), #fff));
+    }
 
     @media (width <= 767px) {
       font-size: 19vw;
@@ -69,6 +88,26 @@
 
   &:active {
     cursor: grabbing;
+  }
+
+  &--norway {
+    background: var(--radial-slide-bg), var(--linear-slide-bg), url("../img/slider-bg/01.jpg");
+  }
+
+  &--austria {
+    background: var(--radial-slide-bg), var(--linear-slide-bg), url("../img/slider-bg/02.jpg");
+  }
+
+  &--uae {
+    background: var(--radial-slide-bg), var(--linear-slide-bg), url("../img/slider-bg/03.jpg");
+  }
+
+  &--thailand {
+    background: var(--radial-slide-bg), var(--linear-slide-bg), url("../img/slider-bg/04.jpg");
+  }
+
+  &--morocco {
+    background: var(--radial-slide-bg), var(--linear-slide-bg), url("../img/slider-bg/05.jpg");
   }
 
   @media (width <= 1200px) {

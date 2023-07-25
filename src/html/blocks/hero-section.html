@@ -1,8 +1,10 @@
 <section class="hero">
 
-    <div class="hero__slide">
+    @@include('../modules/swiper.html')
+
+    <!-- <div class="hero__slide">
         @@include('../modules/slide.html')
-    </div>
+    </div> -->
 
     <div class="hero__content">
         <div class="hero__socials">
@@ -14,7 +16,9 @@
         <div class="hero__slider-controls">
             @@include('../modules/slider-controls.html')
         </div>
-        <div class="hero__scrollbar"></div>
+        <div class="hero__scrollbar">
+            <div class="swiper-scrollbar"></div>
+        </div>
     </div>
 
 </section>
