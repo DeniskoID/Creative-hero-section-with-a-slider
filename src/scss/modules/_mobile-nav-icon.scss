@@ -1,4 +1,3 @@
-/* Nav Icon */
 .mobile-nav-btn {
   --time: 0.1s;
   --width: 35px;
@@ -8,20 +7,19 @@
   --color: #fafafa;
   --radius: 2px;
 
-  /* Fixed height and width */
-  /* height: var(--height); */
-  /* width: var(--width); */
-
-  /* Dynamic height and width */
   z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
   width: var(--width);
   height: calc(var(--line-height) * 3 + var(--spacing) * 2);
+
+  @media (min-width: 1199px) {
+    display: none;
+  }
 }
 
-.nav-icon {
+.mobile-nav-icon {
   position: relative;
   border-radius: var(--radius);
   width: var(--width);
@@ -29,8 +27,8 @@
   background-color: var(--color);
 }
 
-.nav-icon::before,
-.nav-icon::after {
+.mobile-nav-icon::before,
+.mobile-nav-icon::after {
   content: "";
   position: absolute;
   left: 0;
@@ -42,36 +40,28 @@
   transition: transform var(--time) ease-in, top var(--time) linear var(--time);
 }
 
-.nav-icon::before {
-  /* top: calc(var(--line-height) * -2); */
+.mobile-nav-icon::before {
   top: calc(-1 * (var(--line-height) + var(--spacing)));
 }
 
-.nav-icon::after {
-  /* top: calc(var(--line-height) * 2); */
+.mobile-nav-icon::after {
   top: calc(var(--line-height) + var(--spacing));
 }
 
-.nav-icon.nav-icon--active {
+.mobile-nav-icon.nav-icon--active {
   background-color: transparent;
 }
 
-.nav-icon.nav-icon--active::before,
-.nav-icon.nav-icon--active::after {
+.mobile-nav-icon.nav-icon--active::before,
+.mobile-nav-icon.nav-icon--active::after {
   top: 0;
   transition: top var(--time) linear, transform var(--time) ease-in var(--time);
 }
 
-.nav-icon.nav-icon--active::before {
+.mobile-nav-icon.nav-icon--active::before {
   transform: rotate(45deg);
 }
 
-.nav-icon.nav-icon--active::after {
+.mobile-nav-icon.nav-icon--active::after {
   transform: rotate(-45deg);
 }
-
-// @media (max-width: 1000px) {
-// 	.mobile-nav-btn {
-// 		display: block;
-// 	}
-// }

@@ -24,7 +24,7 @@
     font-size: 20px;
     color: #fff;
 
-    @media (width <= 1400px) {
+    @media (max-width: 1400px) {
       font-size: 18px;
     }
   }
@@ -41,7 +41,7 @@
     }
   }
 
-  @media (width <= 1400px) {
+  @media (max-width: 1400px) {
     padding: 20px 20px 18px 55px;
     background-position: 15px 26px;
   }

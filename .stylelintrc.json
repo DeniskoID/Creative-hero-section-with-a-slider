@@ -504,12 +504,6 @@
         "ignore": ["after-comment", "inside-single-line-block"]
       }
     ],
-    "declaration-no-important": [
-      true,
-      {
-        "severity": "warning"
-      }
-    ],
     "font-family-name-quotes": "always-unless-keyword",
     "font-family-no-duplicate-names": true,
     "font-weight-notation": "numeric",
@@ -523,6 +517,7 @@
     "max-nesting-depth": null,
     "media-feature-name-no-unknown": true,
     "media-feature-name-no-vendor-prefix": true,
+    "media-feature-range-notation": "prefix",
     "no-descending-specificity": null,
     "no-duplicate-selectors": true,
     "no-empty-source": [
@@ -623,7 +618,7 @@
   },
   "overrides": [
     {
-      "files": ["src/scss/*/**.scss"],
+      "files": ["src/scss/*/**.scss", "src/css/*/**.css"],
       "customSyntax": "postcss-scss"
     }
   ]

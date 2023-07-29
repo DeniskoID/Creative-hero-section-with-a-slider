@@ -1,4 +1,10 @@
-import mobileNav from './modules/mobile-nav.js';
+import loader from './modules/loader.js';
+loader();
+
+import fallingNav from './modules/falling-menu.js';
+fallingNav();
+
+import mobileNav from './modules/mobile-menu.js';
 mobileNav();
 
 import Swiper from 'swiper/bundle';

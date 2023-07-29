@@ -1,3 +1,4 @@
+/* stylelint-disable media-feature-range-notation */
 .header {
   position: fixed;
   left: 70px;
@@ -14,12 +15,12 @@
   }
 
   &__nav {
-    @media (width <= 1200px) {
+    @media (max-width: 1200px) {
       display: none;
     }
   }
 
-  @media (width <= 1200px) {
+  @media (max-width: 1200px) {
     left: 40px;
     right: 40px;
     top: 0;
@@ -27,7 +28,7 @@
     padding-bottom: 40px;
   }
 
-  @media (width <= 767px) {
+  @media (max-width: 767px) {
     left: 5%;
     right: 5%;
     top: 0;

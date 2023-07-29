@@ -8,7 +8,8 @@
     font-size: 32px;
   }
 
-  @media (width <= 1200px) {
+  /* stylelint-disable-next-line media-feature-range-notation */
+  @media (max-width: 1200px) {
     font-size: 26px;
   }
 }

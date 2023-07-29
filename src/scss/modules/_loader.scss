@@ -1,0 +1,56 @@
+.loader {
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(38 48 56);
+  transition: opacity 0.1s ease-in;
+  inset: 0;
+
+  &__content {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 400px;
+    height: 4.8px;
+    background: rgb(255 255 255 / 15%);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 192px;
+      height: 4.8px;
+      box-sizing: border-box;
+      background: #fff;
+      animation: animloader 2s linear infinite;
+    }
+
+    @media (max-width: 412px) {
+      width: 280px;
+    }
+
+    @media (max-width: 300px) {
+      width: 200px;
+    }
+  }
+
+  &--hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  @keyframes animloader {
+    0% {
+      left: 0;
+      transform: translateX(-100%);
+    }
+
+    100% {
+      left: 100%;
+      transform: translateX(0%);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.overlay {
+  position: fixed;
+  z-index: 99;
+  display: none;
+  background-color: #313045;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  inset: 0;
+
+  &--open {
+    display: block;
+    opacity: 0.5;
+  }
+}
